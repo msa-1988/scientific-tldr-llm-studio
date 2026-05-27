@@ -1,0 +1,19 @@
+{
+  "base": {
+    "rougeL_mean": 0.2413,
+    "latency_mean_seconds": 0.5919,
+    "generated_tokens_mean": 38.25,
+    "prompt_tokens_mean": 407.6
+  },
+  "tuned": {
+    "rougeL_mean": 0.2947,
+    "latency_mean_seconds": 0.6208,
+    "generated_tokens_mean": 23.32,
+    "prompt_tokens_mean": 407.6
+  },
+  "delta": {
+    "rougeL_mean": 0.0534,
+    "latency_mean_seconds": 0.0289,
+    "generated_tokens_mean": -14.93
+  }
+}

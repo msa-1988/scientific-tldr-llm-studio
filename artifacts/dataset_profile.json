@@ -1,0 +1,37 @@
+{
+  "split_sizes": {
+    "train": 900,
+    "validation": 180,
+    "test": 180
+  },
+  "abstract_word_count": {
+    "mean": 983.16,
+    "median": 959.0,
+    "max": 3245
+  },
+  "summary_word_count": {
+    "mean": 19.13,
+    "median": 18.0,
+    "max": 102
+  },
+  "sample_prompt": "Summarize the following scientific abstract in one technical TL;DR sentence.\n\nAbstract:\nIn this paper, we propose a novel kind of kernel, random forest kernel, to enhance the empirical performance of MMD GAN. Different from common forests with deterministic routings, a probabilistic routing variant is used in our innovated random-forest kernel, which is possible to merge with the CNN frameworks. Our proposed random-forest kernel has the following advantages: From the perspective of random forest, the output of GAN discriminator can be viewed as feature inputs to the forest, where each tree gets access to merely a fraction of the features, and thus the entire forest benefits from ensemble learning. In the aspect of kernel method, random-forest kernel is proved to be characteristic, and therefore suitable for the MMD structure. Besides, being an asymmetric kernel, our random-forest kernel is much more flexible, in terms of capturing the differences between distributions. Sharing the advantages of CNN, kernel method, and ensemble learning, our random-forest kernel based MMD GAN obtains desirable empirical performances on CIFAR-10, CelebA and LSUN bedroom data sets. Furthermore, for the sake of completeness, we also put forward comprehensive theoretical analysis to support our experimental results. Generative adversarial nets (GANs; Goodfellow et al., 2014) are well-known generative models, which largely attribute to the sophisticated design of a generator and a discriminator which are trained jointly in an adversarial fashion. Nowadays GANs are intensely used in a variety of practical tasks, such as image-to-image translation (Tang et al., 2019; Mo et al., 2019) ; 3D reconstruction (Gecer et al., 2019) ; video prediction (Kwon & Park, 2019) ; text-to-image generation (Zhu et al., 2019)\n\nReturn only the TL;DR sentence.",
+  "config": {
+    "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "dataset_name": "allenai/scitldr",
+    "dataset_config": "AIC",
+    "train_size": 900,
+    "validation_size": 180,
+    "test_size": 180,
+    "max_input_words": 260,
+    "max_seq_length": 640,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "learning_rate": 0.0002,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "eval_batch_size": 2,
+    "max_steps": 60,
+    "eval_sample_count": 80
+  }
+}

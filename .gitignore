@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+data/cache/
+data/processed/*.jsonl
+artifacts/checkpoints/
+artifacts/runs/
+artifacts/adapter/
+artifacts/model_cache/
+artifacts/merged/
+artifacts/tmp/
+*.pyc

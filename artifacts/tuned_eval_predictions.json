@@ -1,0 +1,402 @@
+[
+  {
+    "paper_id": "Byx83s09Km",
+    "reference": "We develop a practical extension of Information-Directed Sampling for Reinforcement Learning, which accounts for parametric uncertainty and heteroscedasticity in the return distribution for exploration.",
+    "prediction": "We propose a new exploration algorithm for reinforcement learning that uses information directed sampling to capture both parametric uncertainty and heteroscedastic observation noise.",
+    "rougeL": 0.37499999999999994,
+    "latency_seconds": 0.8177099710010225,
+    "prompt_tokens": 406,
+    "generated_tokens": 29,
+    "abstract_preview": "Efficient exploration remains a major challenge for reinforcement learning. One reason is that the variability of the returns often depends on the current state and action, and is therefore heteroscedastic. Classical exploration strategies such as upper confidence bound algorithms and Thompson sampling fail to appropriately account for heteroscedasticity, even in the bandit setting. Motivated by r"
+  },
+  {
+    "paper_id": "SkGNrnC9FQ",
+    "reference": "We propose a method for aligning the latent features learned from different datasets using harmonic correlations.",
+    "prediction": "We propose a new method for aligning datasets using intrinsic dimensionality metrics and diffusion maps",
+    "rougeL": 0.5161290322580646,
+    "latency_seconds": 0.45318294600292575,
+    "prompt_tokens": 375,
+    "generated_tokens": 18,
+    "abstract_preview": "We propose a novel framework for combining datasets via alignment of their associated intrinsic dimensions. Our approach assumes that the two datasets are sampled from a common latent space, i.e., they measure equivalent systems. Thus, we expect there to exist a natural (albeit unknown) alignment of the data manifolds associated with the intrinsic geometry of these datasets, which are perturbed by"
+  },
+  {
+    "paper_id": "rJxF73R9tX",
+    "reference": "A deep abstaining neural network trained with a novel loss function that learns representations for when to abstain enabling robust learning in the presence of different types of noise.",
+    "prediction": "A new way to train a deep classifier that improves its ability to learn representations for structured noise and improve its ability to detect out-of-category predictions",
+    "rougeL": 0.31578947368421056,
+    "latency_seconds": 0.7732481239945628,
+    "prompt_tokens": 389,
+    "generated_tokens": 29,
+    "abstract_preview": "We introduce the deep abstaining classifier -- a deep neural network trained with a novel loss function that provides an abstention option during training. This allows the DNN to abstain on confusing or difficult-to-learn examples while improving performance on the non-abstained samples. We show that such deep abstaining classifiers can: (i) learn representations for structured noise -- where nois"
+  },
+  {
+    "paper_id": "BkgWHnR5tm",
+    "reference": "Automatic robotic design search with graph neural networks",
+    "prediction": "We use graph neural networks to evolve robots by applying graph mutation with uncertainty.",
+    "rougeL": 0.2727272727272727,
+    "latency_seconds": 0.44217726500937715,
+    "prompt_tokens": 390,
+    "generated_tokens": 16,
+    "abstract_preview": "Despite the recent successes in robotic locomotion control, the design of robot relies heavily on human engineering. Automatic robot design has been a long studied subject, but the recent progress has been slowed due to the large combinatorial search space and the difficulty in evaluating the found candidates. To address the two challenges, we formulate automatic robot design as a graph search pro"
+  },
+  {
+    "paper_id": "SyG1QnRqF7",
+    "reference": "We propose a principled approach that endows classifiers with the ability to resist larger variations between training and testing data in an intelligent and efficient manner.",
+    "prediction": "We propose a principled approach to train networkswith significantly improved resistance to large variations between training and testing data.",
+    "rougeL": 0.5777777777777778,
+    "latency_seconds": 0.6272976299951551,
+    "prompt_tokens": 445,
+    "generated_tokens": 23,
+    "abstract_preview": "Learning deep networks which can resist large variations between training andtesting data is essential to build accurate and robust image classifiers. Towardsthis end, a typical strategy is to apply data augmentation to enlarge the trainingset. However, standard data augmentation is essentially a brute-force strategywhich is inefficient, as it performs all the pre-defined transformations to everyt"
+  },
+  {
+    "paper_id": "H1OQukZ0-",
+    "reference": "An algorithm for optimizing regularization hyper-parameters during training",
+    "prediction": "A simple but effective way to improve the speed of hyperparameter tuning by using a joint dynamical system.",
+    "rougeL": 0.0,
+    "latency_seconds": 0.5677842709992547,
+    "prompt_tokens": 370,
+    "generated_tokens": 22,
+    "abstract_preview": "We propose an efficient online hyperparameter optimization method which uses a joint dynamical system to evaluate the gradient with respect to the hyperparameters. While similar methods are usually limited to hyperparameters with a smooth impact on the model, we show how to apply it to the probability of dropout in neural networks. Finally, we show its effectiveness on two distinct tasks. With the"
+  },
+  {
+    "paper_id": "BywyFQlAW",
+    "reference": "Minimax Curriculum Learning is a machine teaching method involving increasing desirable hardness and scheduled reducing diversity.",
+    "prediction": "A new algorithm for adaptive selection of training subsets for machine learning",
+    "rougeL": 0.14285714285714288,
+    "latency_seconds": 0.341839283995796,
+    "prompt_tokens": 397,
+    "generated_tokens": 13,
+    "abstract_preview": "We introduce and study minimax curriculum learning (MCL), a new method for adaptively selecting a sequence of training subsets for a succession of stages in machine learning. The subsets are encouraged to be small and diverse early on, and then larger, harder, and allowably more homogeneous in later stages. At each stage, model weights and training sets are chosen by solving a joint continuous-dis"
+  },
+  {
+    "paper_id": "Syl7OsRqY7",
+    "reference": "A new state-of-the-art model for multi-evidence question answering using coarse-grain fine-grain hierarchical attention.",
+    "prediction": "We propose a new approach for end-to-end question answering that learns to aggregate evidence from multiple documents while learning to score answers based on the evidence.",
+    "rougeL": 0.2127659574468085,
+    "latency_seconds": 0.761357023002347,
+    "prompt_tokens": 440,
+    "generated_tokens": 30,
+    "abstract_preview": "End-to-end neural models have made significant progress in question answering, however recent studies show that these models implicitly assume that the answer and evidence appear close together in a single document. In this work, we propose the Coarse-grain Fine-grain Coattention Network (CFC), a new question answering model that combines information from evidence across multiple documents. The CF"
+  },
+  {
+    "paper_id": "SyMhLo0qKQ",
+    "reference": "We theoretically prove that linear interpolations are unsuitable for analysis of trained implicit generative models.",
+    "prediction": "We find that we can encode latent spaces without loss of generality, but we do not know how to do it efficiently.",
+    "rougeL": 0.21621621621621623,
+    "latency_seconds": 0.6754472559987335,
+    "prompt_tokens": 393,
+    "generated_tokens": 26,
+    "abstract_preview": "We investigate the properties of multidimensional probability distributions in the context of latent space prior distributions of implicit generative models. Our work revolves around the phenomena arising while decoding linear interpolations between two random latent vectors -- regions of latent space in close proximity to the origin of the space are oversampled, which restricts the usability of l"
+  },
+  {
+    "paper_id": "SJd0EAy0b",
+    "reference": "Generalized Graph Embedding Models",
+    "prediction": "We propose an unsupervised multi-shot learning framework to improve the performance of graph-based methods on KGs",
+    "rougeL": 0.0909090909090909,
+    "latency_seconds": 0.5904193210008088,
+    "prompt_tokens": 395,
+    "generated_tokens": 22,
+    "abstract_preview": "Many types of relations in physical, biological, social and information systems can be modeled as homogeneous or heterogeneous concept graphs. Hence, learning from and with graph embeddings has drawn a great deal of research interest recently, but only ad hoc solutions have been obtained this far. In this paper, we conjecture that the one-shot supervised learning mechanism is a bottleneck in impro"
+  },
+  {
+    "paper_id": "H1Dy---0Z",
+    "reference": "A distributed architecture for deep reinforcement learning at scale, using parallel data-generation to improve the state of the art on the Arcade Learning Environment benchmark in a fraction of the wall-clock training time of previous approaches.",
+    "prediction": "A new approach to deep RL that achieves better final performance in a fraction of the wall clock training time.",
+    "rougeL": 0.37931034482758624,
+    "latency_seconds": 0.5949625140056014,
+    "prompt_tokens": 402,
+    "generated_tokens": 22,
+    "abstract_preview": "We propose a distributed architecture for deep reinforcement learning at scale, that enables agents to learn effectively from orders of magnitude more data than previously possible. The algorithm decouples acting from learning: the actors interact with their own instances of the environment by selecting actions according to a shared neural network, and accumulate the resulting experience in a shar"
+  },
+  {
+    "paper_id": "H1g0piA9tQ",
+    "reference": "We present metrics and an optimal attack for evaluating models that defend against adversarial examples using confidence thresholding",
+    "prediction": "We propose an attack that is optimal in a variety of settings, including one realistic setting: attacks against linear models.",
+    "rougeL": 0.2631578947368421,
+    "latency_seconds": 0.6518441609950969,
+    "prompt_tokens": 401,
+    "generated_tokens": 24,
+    "abstract_preview": "Current machine learning algorithms can be easily fooled by adversarial examples. One possible solution path is to make models that use confidence thresholding to avoid making mistakes. Such models refuse to make a prediction when they are not confident of their answer. We propose to evaluate such models in terms of tradeoff curves with the goal of high success rate on clean examples and low failu"
+  },
+  {
+    "paper_id": "S1lg0jAcYm",
+    "reference": "An unbiased and low-variance gradient estimator for discrete latent variable models",
+    "prediction": "We propose a new estimator for Monte Carlo integration that exploits variable augmentation and reparameterization to achieve low variance and high efficiency.",
+    "rougeL": 0.1764705882352941,
+    "latency_seconds": 0.68535884701123,
+    "prompt_tokens": 425,
+    "generated_tokens": 26,
+    "abstract_preview": "To backpropagate the gradients through stochastic binary layers, we propose the augment-REINFORCE-merge (ARM) estimator that is unbiased, exhibits low variance, and has low computational complexity. Exploiting variable augmentation, REINFORCE, and reparameterization, the ARM estimator achieves adaptive variance reduction for Monte Carlo integration by merging two expectations via common random num"
+  },
+  {
+    "paper_id": "HkjL6MiTb",
+    "reference": "In this work we introduce a novel Siamese Deep Neural Network architecture that is able to effectively learn from data in the presence of multiple adverse events.",
+    "prediction": "We propose a new deep learning method for predicting the probability of survival in the presence of competing risks.",
+    "rougeL": 0.34782608695652173,
+    "latency_seconds": 0.5744407119927928,
+    "prompt_tokens": 399,
+    "generated_tokens": 21,
+    "abstract_preview": "Survival Analysis (time-to-event analysis) in the presence of multiple possible adverse events, i.e., competing risks, is a challenging, yet very important problem in medicine, finance, manufacturing, etc. Extending classical survival analysis to competing risks is not trivial since only one event (e.g. one cause of death) is observed and hence, the incidence of an event of interest is often obscu"
+  },
+  {
+    "paper_id": "rJIgf7bAZ",
+    "reference": "We develop a novel policy gradient method for the automatic learning of policies with options using a differentiable inference step.",
+    "prediction": "We propose a new policy gradient method for learning policies with options.",
+    "rougeL": 0.625,
+    "latency_seconds": 0.3706783590023406,
+    "prompt_tokens": 374,
+    "generated_tokens": 14,
+    "abstract_preview": "In the pursuit of increasingly intelligent learning systems, abstraction plays a vital role in enabling sophisticated decisions to be made in complex environments. The options framework provides formalism for such abstraction over sequences of decisions. However most models require that options be given a priori, presumably specified by hand, which is neither efficient, nor scalable. Indeed, it is"
+  },
+  {
+    "paper_id": "Bk9nkMa4G",
+    "reference": "Approach to improve classification accuracy on classes in the tail.",
+    "prediction": "We propose a method that discriminatively learns an embedding in which a simple Bayesian classifier can balance the class priors and likelihoods in a long-tailed dataset.",
+    "rougeL": 0.16216216216216217,
+    "latency_seconds": 0.8902925540023716,
+    "prompt_tokens": 431,
+    "generated_tokens": 33,
+    "abstract_preview": "The statistics of the real visual world presents a long-tailed distribution: a few classes have significantly more training instances than the remaining classes in a dataset. This is because the real visual world has a few classes that are common while others are rare. Unfortunately, the performance of a convolutional neural network is typically unsatisfactory when trained using a long-tailed data"
+  },
+  {
+    "paper_id": "B1g6XnCcKQ",
+    "reference": "An unsupervised approach for learning disentangled representations of objects entirely from unlabeled monocular videos.",
+    "prediction": "We learn to understand objects by discovering them in unlabeled video sequences.",
+    "rougeL": 0.30769230769230765,
+    "latency_seconds": 0.37931158499850426,
+    "prompt_tokens": 383,
+    "generated_tokens": 15,
+    "abstract_preview": "Discovering objects and their attributes is of great importance for autonomous agents to effectively operate in human environments. This task is particularly challenging due to the ubiquitousness of objects and all their nuances in perceptual and semantic detail. In this paper we present an unsupervised approach for learning disentangled representations of objects entirely from unlabeled monocular"
+  },
+  {
+    "paper_id": "rJSr0GZR-",
+    "reference": "Learning Priors for Adversarial Autoencoders",
+    "prediction": "We propose to learn a proper prior from data for adversarial autoencoders (AAEs).",
+    "rougeL": 0.5555555555555556,
+    "latency_seconds": 0.5258086019894108,
+    "prompt_tokens": 414,
+    "generated_tokens": 20,
+    "abstract_preview": "Most deep latent factor models choose simple priors for simplicity, tractability or not knowing what prior to use. Recent studies show that the choice of the prior may have a profound effect on the expressiveness of the model, especially when its generative network has limited capacity. In this paper, we propose to learn a proper prior from data for adversarial autoencoders (AAEs). We introduce th"
+  },
+  {
+    "paper_id": "HkxStoC5F7",
+    "reference": "Novel framework for meta-learning that unifies and extends a broad class of existing few-shot learning methods. Achieves strong performance on few-shot learning benchmarks without requiring iterative test-time inference.",
+    "prediction": "We propose a novel framework for meta-learning that enables fast inference and flexibility in the face of many-shot learning tasks.",
+    "rougeL": 0.3703703703703703,
+    "latency_seconds": 0.5961543359881034,
+    "prompt_tokens": 420,
+    "generated_tokens": 24,
+    "abstract_preview": "This paper introduces a new framework for data efficient and versatile learning. Specifically: 1) We develop ML-PIP, a general framework for Meta-Learning approximate Probabilistic Inference for Prediction. ML-PIP extends existing probabilistic interpretations of meta-learning to cover a broad class of methods. 2) We introduce \\Versa{}, an instance of the framework employing a flexible and versati"
+  },
+  {
+    "paper_id": "HJGXzmspb",
+    "reference": "We apply training and inference with only low-bitwidth integers in DNNs",
+    "prediction": "We propose a novel method to discretize both training and inference using low-bitsized integers.",
+    "rougeL": 0.4444444444444445,
+    "latency_seconds": 0.5253344230004586,
+    "prompt_tokens": 412,
+    "generated_tokens": 20,
+    "abstract_preview": "Researches on deep neural networks with discrete parameters and their deployment in embedded systems have been active and promising topics. Although previous works have successfully reduced precision in inference, transferring both training and inference processes to low-bitwidth integers has not been demonstrated simultaneously. In this work, we develop a new method termed as ``\"WAGE\" to discreti"
+  },
+  {
+    "paper_id": "4ZO8BVlix-",
+    "reference": "A mixed reality driving simulator using stereo cameras and passthrough VR evaluated in a user study with 24 participants.",
+    "prediction": "We design a new driving simulator that increases the feeling of presence in real time.",
+    "rougeL": 0.23529411764705882,
+    "latency_seconds": 0.4377647670044098,
+    "prompt_tokens": 400,
+    "generated_tokens": 17,
+    "abstract_preview": "Driving simulators play an important role in vehicle research. However, existing virtual reality simulators do not give users a true sense of presence. UniNet is our driving simulator, designed to allow users to interact with and visualize simulated traffic in mixed reality. It is powered by SUMO and Unity. UniNet's modular architecture allows us to investigate interdisciplinary research topics su"
+  },
+  {
+    "paper_id": "rkEfPeZRb",
+    "reference": "A new algorithm to reduce the communication overhead of distributed deep learning by distinguishing \u2018unambiguous\u2019 gradients.",
+    "prediction": "We propose a method to reduce the communication overhead of distributed deep learning.",
+    "rougeL": 0.6896551724137931,
+    "latency_seconds": 0.41692300599243026,
+    "prompt_tokens": 377,
+    "generated_tokens": 15,
+    "abstract_preview": "Due to the substantial computational cost, training state-of-the-art deep neural networks for large-scale datasets often requires distributed training using multiple computation workers. However, by nature, workers need to frequently communicate gradients, causing severe bottlenecks, especially on lower bandwidth connections. A few methods have been proposed to compress gradient for efficient comm"
+  },
+  {
+    "paper_id": "SJFM0ZWCb",
+    "reference": "A fully unsupervised method, to naturally integrate dimensionality reduction and temporal clustering into a single end to end learning framework.",
+    "prediction": "We propose a new unsupervised learning algorithm for time series classification based on deep clustering and dimensionality reduction.",
+    "rougeL": 0.2105263157894737,
+    "latency_seconds": 0.609231117006857,
+    "prompt_tokens": 389,
+    "generated_tokens": 23,
+    "abstract_preview": "Unsupervised learning of timeseries data is a challenging problem in machine learning. Here, we propose a novel algorithm, Deep Temporal Clustering (DTC), a fully unsupervised method, to naturally integrate dimensionality reduction and temporal clustering into a single end to end learning framework. The algorithm starts with an initial cluster estimates using an autoencoder for dimensionality redu"
+  },
+  {
+    "paper_id": "r1xQQhAqKX",
+    "reference": "The paper proposes using probability distributions instead of points for instance embeddings tasks such as recognition and verification.",
+    "prediction": "We propose Hedged Instance Embedding, a metric learning-based instance embedding that learns to hedge the location of instances in the embedding space.",
+    "rougeL": 0.1951219512195122,
+    "latency_seconds": 0.7507452280115103,
+    "prompt_tokens": 420,
+    "generated_tokens": 28,
+    "abstract_preview": "Instance embeddings are an efficient and versatile image representation that facilitates applications like recognition, verification, retrieval, and clustering. Many metric learning methods represent the input as a single point in the embedding space. Often the distance between points is used as a proxy for match confidence. However, this can fail to represent uncertainty which can arise when the "
+  },
+  {
+    "paper_id": "SySaJ0xCZ",
+    "reference": "We propose a simple and efficent method for architecture search for convolutional neural networks.",
+    "prediction": "We propose a new method to automatically search for well-performing CNN architectures based on a simple hill climbing procedure whose operators apply network morphisms, followed by short optimization runs by cosine annealing.",
+    "rougeL": 0.2978723404255319,
+    "latency_seconds": 1.0074037099984707,
+    "prompt_tokens": 401,
+    "generated_tokens": 39,
+    "abstract_preview": "Neural networks have recently had a lot of success for many tasks. However, neural network architectures that perform well are still typically designed manually by experts in a cumbersome trial-and-error process. We propose a new method to automatically search for well-performing CNN architectures based on a simple hill climbing procedure whose operators apply network morphisms, followed by short "
+  },
+  {
+    "paper_id": "S16FPMgRZ",
+    "reference": "We propose tensor contraction and low-rank tensor regression layers to preserve and leverage the multi-linear structure throughout the network, resulting in huge space savings with little to no impact on performance.",
+    "prediction": "We propose two new techniques to address the problem of reducing the number of parameters in fully-connected layers while preserving the ability to learn the correct model.",
+    "rougeL": 0.22950819672131145,
+    "latency_seconds": 0.823976417988888,
+    "prompt_tokens": 406,
+    "generated_tokens": 30,
+    "abstract_preview": "Convolution neural networks typically consist of many convolutional layers followed by several fully-connected layers. While convolutional layers map between high-order activation tensors, the fully-connected layers operate on flattened activation vectors. Despite its success, this approach has notable drawbacks. Flattening discards the multi-dimensional structure of the activations, and the fully"
+  },
+  {
+    "paper_id": "HJx54i05tX",
+    "reference": "We study the behavior of weight-tied multilayer vanilla autoencoders under the assumption of random weights. Via an exact characterization in the limit of large dimensions, our analysis reveals interesting phase transition phenomena.",
+    "prediction": "We characterize the behavior of weight-tied autoencoders under the assumption of random weights.",
+    "rougeL": 0.5531914893617021,
+    "latency_seconds": 0.5232604570046533,
+    "prompt_tokens": 455,
+    "generated_tokens": 19,
+    "abstract_preview": "We study the behavior of weight-tied multilayer vanilla autoencoders under the assumption of random weights. Via an exact characterization in the limit of large dimensions, our analysis reveals interesting phase transition phenomena when the depth becomes large. This, in particular, provides quantitative answers and insights to three questions that were yet fully understood in the literature. Firs"
+  },
+  {
+    "paper_id": "HJeKCi0qYX",
+    "reference": "A generic framework to scale existing graph embedding techniques to large graphs.",
+    "prediction": "We introduce a new method called MILE that scales to large graphs while maintaining good performance on node classification.",
+    "rougeL": 0.3225806451612903,
+    "latency_seconds": 0.5765467869932763,
+    "prompt_tokens": 385,
+    "generated_tokens": 22,
+    "abstract_preview": "Recently there has been a surge of interest in designing graph embedding methods. Few, if any, can scale to a large-sized graph with millions of nodes due to both computational complexity and memory requirements. In this paper, we relax this limitation by introducing the MultI-Level Embedding (MILE) framework \u2013 a generic methodology allowing contemporary graph embedding methods to scale to large g"
+  },
+  {
+    "paper_id": "BJxbYoC9FQ",
+    "reference": "We propose a new saliency map extraction method which results in extracting higher quality maps.",
+    "prediction": "We propose a classifier-independent method for extracting saliency maps from images.",
+    "rougeL": 0.4444444444444445,
+    "latency_seconds": 0.4235085039981641,
+    "prompt_tokens": 450,
+    "generated_tokens": 16,
+    "abstract_preview": "Extracting saliency maps, which indicate parts of the image important to classification, requires many tricks to achieve satisfactory performance when using classifier-dependent methods. Instead, we propose classifier-agnostic saliency map extraction, which finds all parts of the image that any classifier could use, not just one given in advance. We observe that the proposed approach extracts high"
+  },
+  {
+    "paper_id": "HJgeEh09KQ",
+    "reference": "We refine the over-approximation results from incomplete verifiers using MILP solvers to prove more robustness properties than state-of-the-art.",
+    "prediction": "We propose a new method for certifying neural networks against adversarial attacks using mixed-integer linear programming.",
+    "rougeL": 0.10256410256410256,
+    "latency_seconds": 0.5758550309983548,
+    "prompt_tokens": 446,
+    "generated_tokens": 22,
+    "abstract_preview": "We present a novel approach for the certification of neural networks against adversarial perturbations which combines scalable overapproximation methods with precise (mixed integer) linear programming. This results in significantly better precision than state-of-the-art verifiers on challenging feedforward and convolutional neural networks with piecewise linear activation functions. Neural network"
+  },
+  {
+    "paper_id": "H1eqviAqYX",
+    "reference": "Analyze the reason for neural response generative models preferring universal replies; Propose a method to avoid it.",
+    "prediction": "We propose a new method to improve the performance of Seq2Seq models on response generation tasks by optimizing the word order rather than selecting common words.",
+    "rougeL": 0.186046511627907,
+    "latency_seconds": 0.7917764559970237,
+    "prompt_tokens": 406,
+    "generated_tokens": 30,
+    "abstract_preview": "Recent advances in neural Sequence-to-Sequence (Seq2Seq) models reveal a purely data-driven approach to the response generation task. Despite its diverse variants and applications, the existing Seq2Seq models are prone to producing short and generic replies, which blocks such neural network architectures from being utilized in practical open-domain response generation tasks. In this research, we a"
+  },
+  {
+    "paper_id": "BJlrSmbAZ",
+    "reference": "We show that training a deep network using batch normalization is equivalent to approximate inference in Bayesian models, and we demonstrate how this finding allows us to make useful estimates of the model uncertainty in conventional networks.",
+    "prediction": "We propose a new way to estimate the uncertainty of a deep network by applying batch normalization to the output of the network.",
+    "rougeL": 0.3333333333333333,
+    "latency_seconds": 0.6741472069988959,
+    "prompt_tokens": 387,
+    "generated_tokens": 25,
+    "abstract_preview": "Deep neural networks have led to a series of breakthroughs, dramatically improving the state-of-the-art in many domains. The techniques driving these advances, however, lack a formal method to account for model uncertainty. While the Bayesian approach to learning provides a solid theoretical framework to handle uncertainty, inference in Bayesian-inspired deep neural networks is difficult. In this "
+  },
+  {
+    "paper_id": "rkQsMCJCb",
+    "reference": "We replace normal convolutions with adaptive convolutions to improve GANs generator.",
+    "prediction": "We propose a new method to learn the upsampling function of GANs using the local context of the image.",
+    "rougeL": 0.19999999999999998,
+    "latency_seconds": 0.7616156040021451,
+    "prompt_tokens": 416,
+    "generated_tokens": 24,
+    "abstract_preview": "Most existing GANs architectures that generate images use transposed convolution or resize-convolution as their upsampling algorithm from lower to higher resolution feature maps in the generator. We argue that this kind of fixed operation is problematic for GANs to model objects that have very different visual appearances. We propose a novel adaptive convolution method that learns the upsampling a"
+  },
+  {
+    "paper_id": "rkLyJl-0-",
+    "reference": "We describe a practical optimization algorithm for deep neural networks that works faster and generates better models compared to widely used algorithms.",
+    "prediction": "We propose a fast, scalable, and effective method for training large-scale deep networks using a single hyperparameter.",
+    "rougeL": 0.3,
+    "latency_seconds": 0.6076166109996848,
+    "prompt_tokens": 438,
+    "generated_tokens": 23,
+    "abstract_preview": "Progress in deep learning is slowed by the days or weeks it takes to train large models. The natural solution of using more hardware is limited by diminishing returns, and leads to inefficient use of additional resources. In this paper, we present a large batch, stochastic optimization algorithm that is both faster than widely used algorithms for fixed amounts of computation, and also scales up su"
+  },
+  {
+    "paper_id": "Hk2MHt-3-",
+    "reference": "We show that splitting a neural network into parallel branches improves performance and that proper coupling of the branches improves performance even further.",
+    "prediction": "A new architecture for deep learning based on the idea of branching and averaging the log-probability of each branch",
+    "rougeL": 0.23255813953488372,
+    "latency_seconds": 0.5874349369987613,
+    "prompt_tokens": 461,
+    "generated_tokens": 23,
+    "abstract_preview": "We investigate in this paper the architecture of deep convolutional networks. Building on existing state of the art models, we propose a reconfiguration of the model parameters into several parallel branches at the global network level, with each branch being a standalone CNN. We show that this arrangement is an efficient way to significantly reduce the number of parameters while at the same time "
+  },
+  {
+    "paper_id": "Skvin0GWM",
+    "reference": "Human-like Clustering with CNNs",
+    "prediction": "We propose a unified framework for clustering based on the hierarchy of visual ventral streams and their underlying structure.",
+    "rougeL": 0.08333333333333333,
+    "latency_seconds": 0.5641045429947553,
+    "prompt_tokens": 394,
+    "generated_tokens": 22,
+    "abstract_preview": "Classification and clustering have been studied separately in machine learning and computer vision. Inspired by the recent success of deep learning models in solving various vision problems (e.g., object recognition, semantic segmentation) and the fact that humans serve as the gold standard in assessing clustering algorithms, here, we advocate for a unified treatment of the two problems and sugges"
+  },
+  {
+    "paper_id": "SkHkeixAW",
+    "reference": "Systematic categorization of regularization methods for deep learning, revealing their similarities.",
+    "prediction": "We present a taxonomy of regularization methods, which allows us to classify existing methods based on their assumptions and the mathematical tools they rely on.",
+    "rougeL": 0.2222222222222222,
+    "latency_seconds": 0.7064809599978616,
+    "prompt_tokens": 388,
+    "generated_tokens": 28,
+    "abstract_preview": "Regularization is one of the crucial ingredients of deep learning, yet the term regularization has various definitions, and regularization methods are often studied separately from each other. In our work we present a novel, systematic, unifying taxonomy to categorize existing methods. We distinguish methods that affect data, network architectures, error terms, regularization terms, and optimizati"
+  },
+  {
+    "paper_id": "Sk6fD5yCb",
+    "reference": "state-of-the-art computational performance implementation of binary neural networks",
+    "prediction": "We present a new method for optimizing deep learning models by converting them from binary to single-bit representation.",
+    "rougeL": 0.06666666666666667,
+    "latency_seconds": 0.5482118159998208,
+    "prompt_tokens": 424,
+    "generated_tokens": 21,
+    "abstract_preview": "There are many applications scenarios for which the computational performance and memory footprint of the prediction phase of Deep Neural Networks (DNNs) need to be optimized. Binary Deep Neural Networks (BDNNs) have been shown to be an effective way of achieving this objective. In this paper, we show how Convolutional Neural Networks (CNNs) can be implemented using binary representations. Espress"
+  },
+  {
+    "paper_id": "H1gR5iR5FX",
+    "reference": "A dataset for testing mathematical reasoning (and algebraic generalization), and results on current sequence-to-sequence models.",
+    "prediction": "We develop a task suite of mathematics problems involving sequential questions and answers in a free-form textual input/output format. We use it to evaluate the performance of neural architectures and other systems on the same problem.",
+    "rougeL": 0.1818181818181818,
+    "latency_seconds": 1.0751056080043782,
+    "prompt_tokens": 399,
+    "generated_tokens": 41,
+    "abstract_preview": "Mathematical reasoning---a core ability within human intelligence---presents some unique challenges as a domain: we do not come to understand and solve mathematical problems primarily on the back of experience and evidence, but on the basis of inferring, learning, and exploiting laws, axioms, and symbol manipulation rules. In this paper, we present a new challenge for the evaluation (and eventuall"
+  },
+  {
+    "paper_id": "SybqeKgA-",
+    "reference": "We developed a batch adaptive momentum that can achieve lower loss compared with mini-batch methods after scanning same epochs of data, and it is more robust against large step size.",
+    "prediction": "We propose a batch adaptive momentum method for mini-batch gradient descent and its variants.",
+    "rougeL": 0.34782608695652173,
+    "latency_seconds": 0.5272976289998041,
+    "prompt_tokens": 401,
+    "generated_tokens": 18,
+    "abstract_preview": "Mini-batch gradient descent and its variants are commonly used in deep learning. The principle of mini-batch gradient descent is to use noisy gradient calculated on a batch to estimate the real gradient, thus balancing the computation cost per iteration and the uncertainty of noisy gradient. However, its batch size is a fixed hyper-parameter requiring manual setting before training the neural netw"
+  }
+]

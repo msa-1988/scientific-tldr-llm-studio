@@ -1,0 +1,50 @@
+[
+  {
+    "paper_id": "Byx83s09Km",
+    "reference": "We develop a practical extension of Information-Directed Sampling for Reinforcement Learning, which accounts for parametric uncertainty and heteroscedasticity in the return distribution for exploration.",
+    "base_prediction": "We propose a new exploration strategy called Information-Directed Sampling (IDS) for reinforcement learning that explicitly accounts for both parametric uncertainty and heteroscedastic observation noise. This approach uses a novel, tractable approximation of IDS for deep Q-learning",
+    "tuned_prediction": "We propose a new exploration algorithm for reinforcement learning that uses information directed sampling to capture both parametric uncertainty and heteroscedastic observation noise.",
+    "base_rougeL": 0.47619047619047616,
+    "tuned_rougeL": 0.37499999999999994
+  },
+  {
+    "paper_id": "SkGNrnC9FQ",
+    "reference": "We propose a method for aligning the latent features learned from different datasets using harmonic correlations.",
+    "base_prediction": "Our proposed method combines datasets via alignment of their intrinsic geometric structures, taking into account partial correspondence between data points.",
+    "tuned_prediction": "We propose a new method for aligning datasets using intrinsic dimensionality metrics and diffusion maps",
+    "base_rougeL": 0.16666666666666663,
+    "tuned_rougeL": 0.5161290322580646
+  },
+  {
+    "paper_id": "rJxF73R9tX",
+    "reference": "A deep abstaining neural network trained with a novel loss function that learns representations for when to abstain enabling robust learning in the presence of different types of noise.",
+    "base_prediction": "The deep abstaining classifier enables robust learning in the presence of noise and offers a way to abstain from predictions in cases where the system may incorrectly predict.",
+    "tuned_prediction": "A new way to train a deep classifier that improves its ability to learn representations for structured noise and improve its ability to detect out-of-category predictions",
+    "base_rougeL": 0.3508771929824561,
+    "tuned_rougeL": 0.31578947368421056
+  },
+  {
+    "paper_id": "BkgWHnR5tm",
+    "reference": "Automatic robotic design search with graph neural networks",
+    "base_prediction": "The TL;DR sentence summarizing the scientific abstract is: \"NGE is the first algorithm that can automatically discover kinematically preferred robotic graph structures.\"",
+    "tuned_prediction": "We use graph neural networks to evolve robots by applying graph mutation with uncertainty.",
+    "base_rougeL": 0.19354838709677416,
+    "tuned_rougeL": 0.2727272727272727
+  },
+  {
+    "paper_id": "SyG1QnRqF7",
+    "reference": "We propose a principled approach that endows classifiers with the ability to resist larger variations between training and testing data in an intelligent and efficient manner.",
+    "base_prediction": "We proposed a principled approach to train networkswith significantly improved resistance to large variations between training and testing data using an embedded learnable transformation module.",
+    "tuned_prediction": "We propose a principled approach to train networkswith significantly improved resistance to large variations between training and testing data.",
+    "base_rougeL": 0.5490196078431373,
+    "tuned_rougeL": 0.5777777777777778
+  },
+  {
+    "paper_id": "H1OQukZ0-",
+    "reference": "An algorithm for optimizing regularization hyper-parameters during training",
+    "base_prediction": "We propose an efficient online hyperparameter optimization method that uses a joint dynamical system to evaluate gradients with respect to hyperparameters.",
+    "tuned_prediction": "A simple but effective way to improve the speed of hyperparameter tuning by using a joint dynamical system.",
+    "base_rougeL": 0.13333333333333333,
+    "tuned_rougeL": 0.0
+  }
+]
