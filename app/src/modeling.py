@@ -144,13 +144,15 @@ def generate_summary(model, tokenizer, abstract: str, max_new_tokens: int = 48) 
         model.generation_config.top_k = None
         model.generation_config.top_p = None
         model.generation_config.temperature = None
+        model.generation_config.repetition_penalty = 1.05
     start = time.perf_counter()
     outputs = model.generate(
         **inputs,
-        max_new_tokens=max_new_tokens,
+        max_new_tokens=min(max_new_tokens, 40),
         do_sample=False,
         pad_token_id=tokenizer.pad_token_id,
         eos_token_id=tokenizer.eos_token_id,
+        repetition_penalty=1.05,
     )
     latency_seconds = time.perf_counter() - start
     generated_tokens = outputs[0][inputs["input_ids"].shape[-1]:]

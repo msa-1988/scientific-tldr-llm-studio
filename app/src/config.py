@@ -13,22 +13,21 @@ SYSTEM_PROMPT = (
 class ProjectConfig:
     base_model: str = "Qwen/Qwen2.5-0.5B-Instruct"
     dataset_name: str = "allenai/scitldr"
-    dataset_config: str = "AIC"
-    train_size: int = 900
-    validation_size: int = 180
-    test_size: int = 180
-    max_input_words: int = 260
-    max_seq_length: int = 640
-    lora_rank: int = 16
-    lora_alpha: int = 32
+    dataset_config: str = "Abstract"
+    train_size: int = 1992
+    validation_size: int = 300
+    test_size: int = 300
+    max_input_words: int = 240
+    max_seq_length: int = 512
+    lora_rank: int = 32
+    lora_alpha: int = 64
     lora_dropout: float = 0.05
-    learning_rate: float = 2e-4
-    per_device_train_batch_size: int = 1
+    learning_rate: float = 1.5e-4
+    per_device_train_batch_size: int = 2
     gradient_accumulation_steps: int = 4
-    eval_batch_size: int = 2
-    max_steps: int = 60
-    eval_sample_count: int = 80
+    eval_batch_size: int = 4
+    max_steps: int = 300
+    eval_sample_count: int = 120
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
-

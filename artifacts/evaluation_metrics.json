@@ -1,19 +1,23 @@
 {
   "base": {
-    "rougeL_mean": 0.2413,
-    "latency_mean_seconds": 0.5919,
-    "generated_tokens_mean": 38.25,
-    "prompt_tokens_mean": 407.6
+    "rougeL_mean": 0.2963,
+    "latency_mean_seconds": 0.6384,
+    "generated_tokens_mean": 35.87,
+    "prompt_tokens_mean": 276.73
   },
   "tuned": {
-    "rougeL_mean": 0.2947,
-    "latency_mean_seconds": 0.6208,
-    "generated_tokens_mean": 23.32,
-    "prompt_tokens_mean": 407.6
+    "rougeL_mean": 0.3432,
+    "latency_mean_seconds": 0.7543,
+    "generated_tokens_mean": 25.27,
+    "prompt_tokens_mean": 276.73
+  },
+  "evaluation_protocol": {
+    "references": "best-of-available multi-reference ROUGE-L",
+    "sample_count": 120
   },
   "delta": {
-    "rougeL_mean": 0.0534,
-    "latency_mean_seconds": 0.0289,
-    "generated_tokens_mean": -14.93
+    "rougeL_mean": 0.0469,
+    "latency_mean_seconds": 0.1159,
+    "generated_tokens_mean": -10.6
   }
 }

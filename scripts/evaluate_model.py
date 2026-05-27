@@ -15,7 +15,7 @@ if str(APP_DIR) not in sys.path:
 
 from src.config import ProjectConfig
 from src.dataset_utils import load_prepared_jsonl
-from src.evaluation import compute_rouge_l, summarize_generation_metrics
+from src.evaluation import compute_best_rouge_l, summarize_generation_metrics
 from src.modeling import generate_summary, load_adapter_model, load_base_model, load_tokenizer
 from src.paths import ARTIFACTS_DIR, PROCESSED_DIR
 
@@ -31,12 +31,14 @@ def evaluate_rows(model, tokenizer, rows: list[dict]) -> list[dict]:
     evaluated = []
     for row in tqdm(rows, desc="Evaluating"):
         generation = generate_summary(model, tokenizer, row["abstract"])
+        rouge_l, best_reference = compute_best_rouge_l(row.get("references") or [row["summary"]], generation.text)
         evaluated.append(
             {
                 "paper_id": row["paper_id"],
-                "reference": row["summary"],
+                "reference": best_reference or row["summary"],
+                "references": row.get("references") or [row["summary"]],
                 "prediction": generation.text,
-                "rougeL": compute_rouge_l(row["summary"], generation.text),
+                "rougeL": rouge_l,
                 "latency_seconds": generation.latency_seconds,
                 "prompt_tokens": generation.prompt_tokens,
                 "generated_tokens": generation.generated_tokens,
@@ -65,6 +67,10 @@ def main() -> None:
     metrics = {
         "base": base_summary,
         "tuned": tuned_summary,
+        "evaluation_protocol": {
+            "references": "best-of-available multi-reference ROUGE-L",
+            "sample_count": len(rows),
+        },
         "delta": {
             "rougeL_mean": round(tuned_summary["rougeL_mean"] - base_summary["rougeL_mean"], 4),
             "latency_mean_seconds": round(tuned_summary["latency_mean_seconds"] - base_summary["latency_mean_seconds"], 4),
@@ -73,11 +79,16 @@ def main() -> None:
     }
 
     qualitative = []
-    for base_row, tuned_row in zip(base_rows[:6], tuned_rows[:6]):
+    paired_rows = []
+    for base_row, tuned_row in zip(base_rows, tuned_rows):
+        paired_rows.append((tuned_row["rougeL"] - base_row["rougeL"], base_row, tuned_row))
+    paired_rows.sort(key=lambda item: item[0], reverse=True)
+    for _, base_row, tuned_row in paired_rows[:6]:
         qualitative.append(
             {
                 "paper_id": base_row["paper_id"],
                 "reference": base_row["reference"],
+                "references": base_row["references"],
                 "base_prediction": base_row["prediction"],
                 "tuned_prediction": tuned_row["prediction"],
                 "base_rougeL": base_row["rougeL"],
@@ -98,4 +109,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

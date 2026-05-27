@@ -35,11 +35,14 @@ def normalize_scitldr_row(row: dict, max_input_words: int) -> dict:
     abstract_sentences = row.get("source") or []
     targets = row.get("target") or []
     abstract = compact_whitespace(" ".join(sentence.strip() for sentence in abstract_sentences if sentence))
-    summary = compact_whitespace(next((item for item in targets if item and item.strip()), ""))
+    references = [compact_whitespace(item) for item in targets if item and item.strip()]
+    summary = references[0] if references else ""
     return {
         "paper_id": row.get("paper_id", "unknown"),
         "abstract": limit_words(abstract, max_input_words),
         "summary": summary,
+        "references": references,
+        "reference_count": len(references),
         "abstract_word_count": len(abstract.split()),
         "summary_word_count": len(summary.split()),
     }
@@ -112,6 +115,7 @@ def create_dataset_splits(
 def summarize_dataset(rows_by_split: dict[str, list[dict]]) -> dict:
     abstract_lengths = [row["abstract_word_count"] for rows in rows_by_split.values() for row in rows]
     summary_lengths = [row["summary_word_count"] for rows in rows_by_split.values() for row in rows]
+    reference_counts = [row["reference_count"] for rows in rows_by_split.values() for row in rows]
     return {
         "split_sizes": {split: len(rows) for split, rows in rows_by_split.items()},
         "abstract_word_count": {
@@ -123,6 +127,11 @@ def summarize_dataset(rows_by_split: dict[str, list[dict]]) -> dict:
             "mean": round(statistics.mean(summary_lengths), 2),
             "median": round(statistics.median(summary_lengths), 2),
             "max": max(summary_lengths),
+        },
+        "reference_count": {
+            "mean": round(statistics.mean(reference_counts), 2),
+            "median": round(statistics.median(reference_counts), 2),
+            "max": max(reference_counts),
         },
         "sample_prompt": build_user_prompt(rows_by_split["train"][0]["abstract"]),
     }

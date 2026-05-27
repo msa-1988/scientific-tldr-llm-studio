@@ -1,50 +1,81 @@
 [
   {
-    "paper_id": "Byx83s09Km",
-    "reference": "We develop a practical extension of Information-Directed Sampling for Reinforcement Learning, which accounts for parametric uncertainty and heteroscedasticity in the return distribution for exploration.",
-    "base_prediction": "We propose a new exploration strategy called Information-Directed Sampling (IDS) for reinforcement learning that explicitly accounts for both parametric uncertainty and heteroscedastic observation noise. This approach uses a novel, tractable approximation of IDS for deep Q-learning",
-    "tuned_prediction": "We propose a new exploration algorithm for reinforcement learning that uses information directed sampling to capture both parametric uncertainty and heteroscedastic observation noise.",
-    "base_rougeL": 0.47619047619047616,
-    "tuned_rougeL": 0.37499999999999994
+    "paper_id": "rk3pnae0b",
+    "reference": "We propose a neural network that is able to generate topic-specific questions.",
+    "references": [
+      "We propose a neural network that is able to generate topic-specific questions.",
+      "Presents a neural network-based approach to generate topic-specific questions with the motivation that topical questions are more meaningful in practical applications.",
+      "Proposes a topic-based generation method using an LSTM to extract topics using a two-stage encoding technique"
+    ],
+    "base_prediction": "The paper proposes a novel neural network that can generate topic-specific questions from a question-answering corpus, without requiring any additional annotations.",
+    "tuned_prediction": "We propose a novel neural network that is able to generate topic-specific questions.",
+    "base_rougeL": 0.5,
+    "tuned_rougeL": 0.962962962962963
   },
   {
-    "paper_id": "SkGNrnC9FQ",
-    "reference": "We propose a method for aligning the latent features learned from different datasets using harmonic correlations.",
-    "base_prediction": "Our proposed method combines datasets via alignment of their intrinsic geometric structures, taking into account partial correspondence between data points.",
-    "tuned_prediction": "We propose a new method for aligning datasets using intrinsic dimensionality metrics and diffusion maps",
-    "base_rougeL": 0.16666666666666663,
-    "tuned_rougeL": 0.5161290322580646
-  },
-  {
-    "paper_id": "rJxF73R9tX",
-    "reference": "A deep abstaining neural network trained with a novel loss function that learns representations for when to abstain enabling robust learning in the presence of different types of noise.",
-    "base_prediction": "The deep abstaining classifier enables robust learning in the presence of noise and offers a way to abstain from predictions in cases where the system may incorrectly predict.",
-    "tuned_prediction": "A new way to train a deep classifier that improves its ability to learn representations for structured noise and improve its ability to detect out-of-category predictions",
-    "base_rougeL": 0.3508771929824561,
-    "tuned_rougeL": 0.31578947368421056
-  },
-  {
-    "paper_id": "BkgWHnR5tm",
-    "reference": "Automatic robotic design search with graph neural networks",
-    "base_prediction": "The TL;DR sentence summarizing the scientific abstract is: \"NGE is the first algorithm that can automatically discover kinematically preferred robotic graph structures.\"",
-    "tuned_prediction": "We use graph neural networks to evolve robots by applying graph mutation with uncertainty.",
-    "base_rougeL": 0.19354838709677416,
-    "tuned_rougeL": 0.2727272727272727
-  },
-  {
-    "paper_id": "SyG1QnRqF7",
-    "reference": "We propose a principled approach that endows classifiers with the ability to resist larger variations between training and testing data in an intelligent and efficient manner.",
-    "base_prediction": "We proposed a principled approach to train networkswith significantly improved resistance to large variations between training and testing data using an embedded learnable transformation module.",
-    "tuned_prediction": "We propose a principled approach to train networkswith significantly improved resistance to large variations between training and testing data.",
-    "base_rougeL": 0.5490196078431373,
+    "paper_id": "SylPMnR9Ym",
+    "reference": "A variational IB based approach to learn action representations directly from videos of actions being taken, achieving better efficiency of subsequent learning methods while requiring lesser amount of action label videos.",
+    "references": [
+      "We learn a representation of an agent's action space from pure visual observations. We use a recurrent latent variable approach with a novel composability loss.",
+      "Proposes a compositional latent-variable model to learn models that predict what will happen next in scenarios where action-labels are not available in abundance.",
+      "A variational IB based approach to learn action representations directly from videos of actions being taken, achieving better efficiency of subsequent learning methods while requiring lesser amount of action label videos.",
+      "This paper proposes an approach to video prediction which autonomously finds an action space encoding differences between subsequent frames"
+    ],
+    "base_prediction": "Intelligent agents can learn to represent the action spaces of other agents by observing them act, which helps them quickly learn to predict the effects of their own actions on the environment and plan complex action sequences.",
+    "tuned_prediction": "We propose a new method for learning a latent representation of an agent's action space from visual observation.",
+    "base_rougeL": 0.1764705882352941,
     "tuned_rougeL": 0.5777777777777778
   },
   {
-    "paper_id": "H1OQukZ0-",
-    "reference": "An algorithm for optimizing regularization hyper-parameters during training",
-    "base_prediction": "We propose an efficient online hyperparameter optimization method that uses a joint dynamical system to evaluate gradients with respect to hyperparameters.",
-    "tuned_prediction": "A simple but effective way to improve the speed of hyperparameter tuning by using a joint dynamical system.",
-    "base_rougeL": 0.13333333333333333,
-    "tuned_rougeL": 0.0
+    "paper_id": "SygHGnRqK7",
+    "reference": "We propose a Bayesian nonparametric model for federated learning with neural networks.",
+    "references": [
+      "We propose a Bayesian nonparametric model for federated learning with neural networks.",
+      "Uses beta process to do federated neural matching.",
+      "The paper considers federate learning of neural networks, where data is distributed on multiple machines and the allocation of data points is potentially inhomogenous and unbalanced."
+    ],
+    "base_prediction": "We develop a Bayesian nonparametric framework for federated learning with neural networks, where each data server trains local neural network weights and synthesizes a more expressive global network without additional supervision or data pooling.",
+    "tuned_prediction": "We develop a Bayesian nonparametric framework for federated learning with neural networks.",
+    "base_rougeL": 0.4347826086956522,
+    "tuned_rougeL": 0.8333333333333334
+  },
+  {
+    "paper_id": "SJzMATlAZ",
+    "reference": "A clustering algorithm that performs joint nonlinear dimensionality reduction and clustering by optimizing a global continuous objective.",
+    "references": [
+      "A clustering algorithm that performs joint nonlinear dimensionality reduction and clustering by optimizing a global continuous objective.",
+      "Presents a clustering algorithm by jointly solving deep autoencoder and clustering as a global continuous objective, showing better results than state-of-the-art clustering schemas.",
+      "Deep Continuous Clustering is a clustering method that integrates the autoencoder objective with the clustering objective then train using SGD."
+    ],
+    "base_prediction": "The presented algorithm combines nonlinear dimensionality reduction and clustering to produce clustered data in a low-dimensional space. It does so by embedding the data into a lower-dimensional space via an autoencoder, which is optimized",
+    "tuned_prediction": "We present a clustering algorithm that performs nonlinear dimensionality reduction and clustering jointly.",
+    "base_rougeL": 0.3018867924528302,
+    "tuned_rougeL": 0.6666666666666667
+  },
+  {
+    "paper_id": "rJIgf7bAZ",
+    "reference": "We develop a novel policy gradient method for the automatic learning of policies with options using a differentiable inference step.",
+    "references": [
+      "We develop a novel policy gradient method for the automatic learning of policies with options using a differentiable inference step.",
+      "The paper presents a new policy gradient technique for learning options, where a single sample can be used to update all options.",
+      "Proposes an off-policy method for learning options in complex continuous problems."
+    ],
+    "base_prediction": "We present a novel policy gradient method for the automatic learning of policies with options, which improves all options available to an agent and can be employed in an off-policy manner, without observing option labels. Experimental",
+    "tuned_prediction": "We present a novel policy gradient method for the automatic learning of policies with options.",
+    "base_rougeL": 0.4912280701754387,
+    "tuned_rougeL": 0.8
+  },
+  {
+    "paper_id": "rJlEojAqFm",
+    "reference": "Relational Forward Models for multi-agent learning make accurate predictions of agents' future behavior, they produce intepretable representations and can be used inside agents.",
+    "references": [
+      "Relational Forward Models for multi-agent learning make accurate predictions of agents' future behavior, they produce intepretable representations and can be used inside agents.",
+      "A way of reducing variance in model free learning by having an explicit model, that uses a graph conv net-like architecture, of actions that other agents will take.",
+      "Predicting multi-agent behavior using a relational forward model with a recurrent component, outperforming two baselines and two ablations"
+    ],
+    "base_prediction": "Relational Forward Models enable multi-agent systems to learn from their environment and predict agents' behavior, providing insights into what drives their actions and how events influence social interactions. This enables faster learning systems and faster",
+    "tuned_prediction": "We introduce Relational Forward Models for multi-agent learning, networks that can learn to make accurate predictions of agents' future behavior in multi-agent environments.",
+    "base_rougeL": 0.33333333333333337,
+    "tuned_rougeL": 0.6122448979591836
   }
 ]

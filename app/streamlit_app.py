@@ -68,6 +68,11 @@ qualitative_examples = load_artifact_or_notice("qualitative_examples.json")
 
 if metrics:
     render_metric_cards(metrics)
+    protocol = metrics.get("evaluation_protocol", {})
+    if protocol:
+        st.caption(
+            f"Evaluation: {protocol.get('references', 'ROUGE-L')} on {protocol.get('sample_count', 'n/a')} held-out examples."
+        )
 
 tab_compare, tab_eval, tab_training = st.tabs(["Compare Outputs", "Evaluation", "Training Setup"])
 
@@ -118,6 +123,8 @@ with tab_eval:
             ]
         )
         st.dataframe(metrics_df, width="stretch")
+        if metrics.get("evaluation_protocol"):
+            st.json(metrics["evaluation_protocol"])
     if qualitative_examples:
         st.markdown("**Representative comparisons**")
         for row in qualitative_examples[:4]:
@@ -136,4 +143,3 @@ with tab_training:
     with right:
         if training_summary:
             st.json(training_summary)
-

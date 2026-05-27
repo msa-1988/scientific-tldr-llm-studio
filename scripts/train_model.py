@@ -55,6 +55,7 @@ def main() -> None:
     tokenizer = load_tokenizer(config.base_model)
     model = load_base_model(config.base_model)
     model.config.use_cache = False
+    model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
     model, _ = attach_lora_adapter(model, config)
 
     train_rows = load_prepared_jsonl(args.train_path)
@@ -77,13 +78,15 @@ def main() -> None:
         lr_scheduler_type="cosine",
         warmup_ratio=0.05,
         logging_steps=5,
-        eval_steps=15,
-        save_steps=30,
+        eval_steps=min(max(config.max_steps // 4, 25), 100),
+        save_steps=min(max(config.max_steps // 2, 50), 150),
         save_total_limit=1,
         eval_strategy="steps",
         report_to=[],
         remove_unused_columns=False,
         optim="paged_adamw_8bit",
+        gradient_checkpointing=True,
+        gradient_checkpointing_kwargs={"use_reentrant": False},
         bf16=torch.cuda.is_available() and torch.cuda.is_bf16_supported(),
         fp16=torch.cuda.is_available() and not torch.cuda.is_bf16_supported(),
     )
@@ -96,6 +99,7 @@ def main() -> None:
         data_collator=SupervisedDataCollator(tokenizer),
     )
     trainer.train()
+    final_eval = trainer.evaluate()
 
     adapter_dir = ARTIFACTS_DIR / "adapter"
     adapter_dir.mkdir(parents=True, exist_ok=True)
@@ -113,6 +117,7 @@ def main() -> None:
         "parameter_counts": parameter_counts,
         "trainable_ratio_percent": round(parameter_counts["trainable"] * 100 / parameter_counts["total"], 4),
         "quantization": "4-bit NF4",
+        "final_eval": final_eval,
         "log_history": trainer.state.log_history,
     }
     with (ARTIFACTS_DIR / "training_summary.json").open("w", encoding="utf-8") as handle:
