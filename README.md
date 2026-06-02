@@ -24,6 +24,37 @@ Repository: `https://github.com/msa-1988/scientific-tldr-llm-studio`
 
 ![Base vs fine-tuned comparison](screenshots/base-vs-tuned.png)
 
+## Pipeline Diagram
+
+```mermaid
+flowchart TD
+    A[Public SciTLDR dataset] --> B[Download train / validation / test JSONL]
+    B --> C[Normalize abstract + references]
+    C --> D[Limit abstract length + build instruction format]
+    D --> E[Export processed JSONL splits]
+    E --> F[Save dataset profile]
+
+    E --> G[Load tokenizer]
+    G --> H[Load 4-bit base model<br/>Qwen2.5-0.5B-Instruct]
+    H --> I[Attach LoRA adapter]
+    I --> J[Format supervised chat examples]
+    J --> K[Trainer fine-tunes adapter]
+    K --> L[Save adapter + tokenizer + training summary]
+
+    E --> M[Test rows for evaluation]
+    H --> N[Base model generation]
+    L --> O[Load tuned adapter model]
+    M --> N
+    M --> P[Tuned model generation]
+    O --> P
+
+    N --> Q[Compute ROUGE-L + latency + token stats]
+    P --> Q
+    Q --> R[Base vs tuned comparison]
+    R --> S[Save metrics + predictions + qualitative examples]
+    S --> T[Streamlit comparison app]
+```
+
 ## What This Project Shows
 
 - public-dataset curation for instruction tuning
