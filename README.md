@@ -2,7 +2,7 @@
 
 Fine-tune and optimize a small domain LLM for scientific abstract summarization using `QLoRA`, `PEFT`, `Transformers`, and `Streamlit`.
 
-This project adapts `Qwen/Qwen2.5-0.5B-Instruct` on the public `allenai/scitldr` dataset so the model can generate short, technical `TL;DR` summaries for scientific abstracts. It includes dataset preparation, 4-bit fine-tuning, baseline-vs-adapter evaluation, multi-reference scoring, qualitative comparisons, and a local demo app for interviews.
+This project adapts `Qwen/Qwen2.5-0.5B-Instruct` on the public `allenai/scitldr` dataset so the model can generate short, technical `TL;DR` summaries for scientific abstracts. It includes dataset preparation, 4-bit fine-tuning, baseline-vs-adapter evaluation, multi-reference scoring, qualitative comparisons, and a local demo app.
 
 Repository: `https://github.com/msa-1988/scientific-tldr-llm-studio`
 
